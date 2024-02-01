@@ -1,0 +1,26 @@
+{
+  "name": "my-vue-ts-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "naive-ui": "^2.26.0",
+    "pinia": "^2.0.11",
+    "vue": "^3.2.25",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.13",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "sass": "^1.49.9",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vue-tsc": "^1.8.27",
+    "postcss-px-to-viewport-8-plugin": "^1.2.3"
+  }
+}
