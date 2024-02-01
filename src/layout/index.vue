@@ -26,7 +26,6 @@ import { defineComponent, h, Component } from 'vue'
 import type { MenuOption } from 'naive-ui'
 import { RouterLink, useRouter, RouteRecord } from 'vue-router'
 import MainHeader from './components/MainHeader.vue'
-import { renderIcon } from '@/utils/render'
 
 function getMenuOptions(routes: RouteRecord[]): MenuOption[] {
   const menuOptions: MenuOption[] = []
@@ -43,7 +42,6 @@ function getMenuOptions(routes: RouteRecord[]): MenuOption[] {
           },
           { default: () => route.name },
         ),
-      icon: route.meta?.icon && renderIcon(route.meta.icon),
     })
   })
   return menuOptions
